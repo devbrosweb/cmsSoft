@@ -15,4 +15,4 @@ Route::redirect('/', 'blog');
 
 Auth::routes();
 
-Route::get('/blog', 'web\PageController@blog')->name('blog');
+Route::get('/blog', 'web\PostController@index')->name('posts.index');
